@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas y atributos obsoletos</title>
+</head>
+<body>
+    <header>
+        <h2>Etiquetas y atributos obsoletos</h2>
+    </header>
+    <hr>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Responsable</th>
+                <th>Etiqueta o Atributo</th>
+                <th>Pertenece a</th>
+                <th>Descripcion</th>
+                <th>Alternativa actual</th>
+                <th>Ejemplo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alexander Stephen Moreno Rodriguez</td>
+                <td>&ltapplet&gt</td>
+                <td>No aplica</td>
+                <td>Un applet es un programa, componente o aplicación que se ejecuta dentro del contexto de otro programa o aplicación escrito en JAVA.</td>
+                <td><object></td>
+                <td> recurso externo, que puede ser tratado como una imagen, un contexto de navegación anidado, o como un recurso que debe ser manejado por un complemento.</td>
+            </tr>
+
+            <tr>
+                <td>Andres Felipe Pardo Hernandez</td>
+                <td><acronym></td>
+                <td>No aplica</td>
+                <td>se utilizaba en HTML para definir un acronimo o abreviar palabras en el contenido web</td>
+                <td><abbr></td>
+                <td><p>El <abbr title="League Of Legends">LOL</abbr> es un juego de estrategia</p></td>
+            </tr>
+
+            <tr>
+                <td>Angie Nathalia Cardenas Pinzon</td>
+                <td><bgsound></td>
+                <td>No aplica</td>
+                <td>Incorpora sonidos de fondo que se ejecuta cuando se entra a la pagina. Solo es interpretada por Internet Explorer. Acepta formatos Mp3, MID, AU y WAV. <audio> No se reproduce solo, se necesita que el usuario oprima play con el controls que se agrega a la etiqueta y  pasa con el preload y que cargue el archivo de audio.</td>
+                <td><audio> No funciona sin atributos de control, controls, autoplay y preload</td>
+                <td><audio src="audio.mp3"></audio> ( src-source)//// <audio src="audio.mp3" controls autoplay loop></audio> ////<audio src="audio.ogg" preload="none"></audio></td>
+            </tr>
+
+            <tr>
+                <td>Angie Tatiana Duran Leon</td>
+                <td><dir></td>
+                <td>No aplica</td>
+                <td>La etiqueta <dir> era una etiqueta obsoleta en HTML que se utilizaba para crear una lista de elementos de directorio. Cada elemento en la lista representaba un ítem dentro de un directorio, como una carpeta en un sistema de archivos</td>
+                <td>actualmente se recomienda utilizar <ul></ul> listas no ordenadas y <ol></ol> listas ordenadas junto con <li> que es el elemento de la lista</td>
+                <td><ul>
+                        <li>lista1</li>
+                        <li>lista2</li>
+                        <li>lista3</li>
+                    </ul>
+                    <ol>
+                        <li>lista1</li>
+                        <li>lista2</li>
+                        <li>lista3</li>
+                    </ol></td>
+            </tr>
+
+            <tr>
+                <td>Cristian Camilo Pardo Hernandez</td>
+                <td><frameset></td>
+                <td>No aplica</td>
+                <td>Los marcos (frames) son áreas separadas y ajustables dentro de una página web donde se pueden cargar diferentes documentos HTML.</td>
+                <td>CSS Grid o <Div></td>
+                <td><style>
+                    .wrapper {
+                      display: grid;
+                      grid-template-columns: 1fr 1fr;
+                      grid-gap: 20px;
+                    }
+                    .frame {
+                      border: 1px solid black;
+                    }
+                  </style>
+                  
+                  <div class="wrapper">
+                    <div class="frame">
+                      <iframe src="https://www.example.com"></iframe>
+                    </div>
+                    <div class="frame">
+                      <iframe src="https://www.anotherexample.com"></iframe>
+                    </div>
+                  </div></td>
+            </tr>
+
+            <tr>
+                <td>Daniel Felipe Rincon Guerrero</td>
+                <td><noframes></td>
+                <td>No aplica</td>
+                <td>Se usó en HTML 4 para actuar como una etiqueta alternativa para los navegadores que no admitían marcos.</td>
+                <td>No aplica</td>
+                <td><frameset cols="25%,50%,25%">
+                        <frame src="frame_a.htm">
+                        <frame src="frame_b.htm">
+                        <noframes>lo siento, su navegador no maneja marcos!</noframes>
+                    </frameset></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
